@@ -4,15 +4,15 @@ const { get } = Ember;
 export function initialize() {
   Ember.Component.reopen({
     bubble(actionName, ...args) {
-      let target;
-      let action = this.actions && this.actions[actionName];
+      const action = this.actions && this.actions[actionName];
 
       if (action) {
-        let shouldBubble = action.apply(this, args) === true;
-        if (!shouldBubble) { return; }
+        if (action(...args) !== true) {
+          return;
+        }
       }
 
-      target = get(this, 'target') || get(this, '_targetObject');
+      const target = get(this, 'target') || get(this, '_targetObject');
 
       if (target) {
         if (target.bubble) {

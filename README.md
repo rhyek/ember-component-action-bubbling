@@ -5,11 +5,11 @@ and have it bubble up the hierarchy all the way to the root component, then
 on to the current controller, its route, eventually reaching the application
 route, simliar to how Controller and Route's `send()` works in Ember:
 
-* Bubbling will continue until reaching the application route or an action
-returns nothing or a falsy value anywhere along the chain.
+* Bubbling will continue while actions along the chain keep returning `true`,
+  until reaching the application route.
 
 * If a component along the chain does not implement the action, bubbling will
-skip to its parent.
+  skip to its parent.
 
 The addon is very simple and all it does is reintroduce behaviour that was
 already present thanks to this lovely little
