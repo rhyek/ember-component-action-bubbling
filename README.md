@@ -51,4 +51,5 @@ export default Ember.Component.extend({
 
 ## Demo
 
-Check out this [twiddle](https://ember-twiddle.com/bad336b20fad4008b2e49ed8a656605a).
+Check out this [twiddle](https://ember-twiddle.com/bad336b20fad4008b2e49ed8a656605a) or
+the [demo page](https://rhyek.github.io/ember-component-action-bubbling/).

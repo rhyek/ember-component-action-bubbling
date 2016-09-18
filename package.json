@@ -11,7 +11,10 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhyek/ember-component-action-bubbling.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -55,6 +58,7 @@
     "ember-cli-babel": "^5.1.6"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://rhyek.github.io/ember-component-action-bubbling/"
   }
 }
