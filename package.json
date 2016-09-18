@@ -1,7 +1,7 @@
 {
   "name": "ember-component-action-bubbling",
-  "version": "0.1.1",
-  "description": "Allows action bubbling in Ember components.",
+  "version": "0.1.2",
+  "description": "Bubble actions in Ember components.",
   "directories": {
     "doc": "doc",
     "test": "tests"
