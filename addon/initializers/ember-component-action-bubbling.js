@@ -7,7 +7,7 @@ export function initialize() {
       const action = this.actions && this.actions[actionName];
 
       if (action) {
-        if (action(...args) !== true) {
+        if (action.apply(this, args) !== true) {
           return;
         }
       }
